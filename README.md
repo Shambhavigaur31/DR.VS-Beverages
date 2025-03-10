@@ -18,15 +18,18 @@ Our current product lineup includes:
 A flavorful cumin-based drink that aids digestion and provides a natural energy boost.
 
 ### Pudina Drink
-![Pudina Drink](pudina.jpg)
+<img src="pudina.jpg" alt="Pudina Drink" width="200">
+
 A refreshing mint drink perfect for cooling off during hot days and supporting digestive health.
 
 ### Lemon Drink
-![Lemon Drink](lemon.jpg)
+<img src="lemon.jpg" alt="Lemon Drink" width="200">
+
 A tangy lemon-infused drink for instant freshness, packed with vitamin C and antioxidants.
 
 ### Tender Coconut Water
-![Tender Coconut Water](coconut.jpg)
+<img src="coconut.jpg" alt="Tender Coconut Water" width="200">
+
 Pure and natural coconut water for ultimate hydration and electrolyte replenishment.
 
 ## 🏆 Certifications
@@ -36,7 +39,7 @@ Pure and natural coconut water for ultimate hydration and electrolyte replenishm
 ## 👨‍🔬 Leadership
 
 ### Dr. Vikesh Kumar
-![Dr. Vikesh Kumar](ceo.jpg)
+<img src="ceo.jpg" alt="Dr. Vikesh Kumar" width="150">
 
 **Founder & CEO**
 
