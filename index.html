@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR.VS Beverages - Refreshing Drinks</title>
+    <link rel="stylesheet" href="company.css">
+    <style>
+        html {
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+        
+        /* Optional: Add some padding to sections for better scroll positioning */
+        section {
+            scroll-margin-top: 80px; /* Adjust based on your header height */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to DR.VS Beverages</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Refreshing & Healthy Drinks</h2>
+        <p>Discover our range of natural and refreshing drinks, crafted to keep you energized and hydrated.</p>
+    </section>
+    
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="products-container">
+            <div class="product">
+                <h3>Zeera Drink</h3>
+                <img src="zeera.jpg" alt="Zeera Drink">
+                <p>A flavorful cumin-based drink that aids digestion.</p>
+            </div>
+            <div class="product">
+                <h3>Pudina Drink</h3>
+                <img src="pudina.jpg" alt="Pudina Drink">
+                <p>A refreshing mint drink perfect for cooling off.</p>
+            </div>
+            <div class="product">
+                <h3>Lemon Drink</h3>
+                <img src="lemon.jpg" alt="Lemon Drink">
+                <p>A tangy lemon-infused drink for instant freshness.</p>
+            </div>
+            <div class="product">
+                <h3>Tender Coconut Water</h3>
+                <img src="coconut.jpg" alt="Tender Coconut Water">
+                <p>Pure and natural coconut water for ultimate hydration.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At DR.VS Beverages, we believe that hydration should be both refreshing and healthy. Our range of natural beverages is designed to energize and nourish you, using only the finest ingredients. Founded in 2025, our passion for wellness drives us to create drinks using minimum artificial additives, packed with nature's goodness. Whether it's the cooling Pudina Drink, the tangy Lemon Drink, or the hydrating Coconut Water, every sip is a step towards better health. Join us in our journey towards mindful and delicious refreshment!</p>
+    </section>
+   
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="ceo.jpg" alt="CEO">
+                <h3>Dr. Vikesh Kumar</h3>
+                <p><strong>Founder & CEO</strong></p>
+                <p>Dr. Vikesh Kumar received his Ph.D. from National Sugar Institute, Kanpur and D.Sc. from the Awadhesh Pratap Singh University, Rewa.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-block">
+                <p><strong>DR.VS Beverages</strong></p>
+                <p><strong>Address:</strong> 154/8 Civil Lines, Unnao-209801, India</p>
+                <p><strong>Phone:</strong> +91-7651920512</p>
+                <p><strong>Email:</strong> <a href="mailto:drvsbeverages@gmail.com">drvsbeverages@gmail.com</a></p>
+                <p><strong>ISO Certification:</strong> ISO 9001:2015 - Manufacturing Trading of Soft Drinks, Production of Mineral Waters And Other Bottled Waters</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 DR.VS Beverages. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        // Optional: Additional JavaScript for smoother scrolling behavior
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

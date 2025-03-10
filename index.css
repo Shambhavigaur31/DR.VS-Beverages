@@ -1,0 +1,347 @@
+/* Base styling with vibrant color scheme */
+:root {
+    --primary-color: #00a8cc;
+    --primary-dark: #007c99;
+    --primary-light: #5ccfe6;
+    --accent-color: #ff9a3c;
+    --accent-hover: #ff7b00;
+    --light-bg: #f0f9ff;
+    --dark-text: #2c3e50;
+    --light-text: #ffffff;
+    --shadow-soft: 0 6px 15px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 8px 20px rgba(0, 0, 0, 0.15);
+    --shadow-strong: 0 10px 25px rgba(0, 0, 0, 0.2);
+    --transition-standard: all 0.3s ease;
+    --radius-small: 8px;
+    --radius-medium: 12px;
+    --radius-large: 15px;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, var(--light-bg), #d4f1f9);
+    color: var(--dark-text);
+    line-height: 1.6;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    color: var(--light-text);
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    box-shadow: var(--shadow-medium);
+  }
+  
+  nav {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 25px;
+  }
+  
+  nav ul li a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-standard);
+    padding-bottom: 3px;
+  }
+  
+  nav ul li a:hover {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+  }
+  
+  /* Main Content Sections */
+  section {
+    padding: 50px;
+    text-align: center;
+    margin: 40px auto;
+    background: var(--light-bg);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-medium);
+    max-width: 85%;
+  }
+  
+  /* Product Grid */
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .product {
+    padding: 25px;
+    background: linear-gradient(135deg, #ffedcc, var(--accent-color));
+    border-radius: var(--radius-large);
+    text-align: center;
+    box-shadow: var(--shadow-medium);
+    transition: var(--transition-standard);
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-strong);
+  }
+  
+  .product img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 15px;
+  }
+  
+  /* Vibrant Section Styling */
+  .about-section, .contact-section {
+    background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+    padding: 70px;
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-strong);
+    max-width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    color: var(--light-text);
+  }
+  
+  .about-section h2, .contact-section h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .about-section p, .contact-section p {
+    font-size: 1.4em;
+    line-height: 2;
+    font-weight: 400;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form label, form input, form textarea {
+    width: 90%;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: var(--radius-medium);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    background-color: var(--light-bg);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: var(--transition-standard);
+  }
+  
+  form input:focus, form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(0, 168, 204, 0.4);
+  }
+  
+  button {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    color: var(--light-text);
+    padding: 16px 32px;
+    border: none;
+    border-radius: var(--radius-medium);
+    cursor: pointer;
+    font-size: 1.3em;
+    transition: var(--transition-standard);
+  }
+  
+  button:hover {
+    background: var(--accent-color);
+    color: var(--light-text);
+    transform: scale(1.03);
+    box-shadow: var(--shadow-medium);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    color: var(--light-text);
+    font-size: 1.1em;
+    box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Section Blocks */
+  .section-block {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: var(--radius-small);
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-standard);
+  }
+  
+  .section-block:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+  }
+  
+  /* Team Section */
+  .team-section {
+    text-align: center;
+    padding: 30px;
+    margin: 20px auto;
+    background: var(--light-bg);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-medium);
+    max-width: 900px;
+  }
+  
+  .team-section h2 {
+    font-size: 28px;
+    color: var(--primary-dark);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Team Grid */
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-member {
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    background: white;
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-standard);
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid var(--primary-light);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member h3 {
+    font-size: 20px;
+    color: var(--primary-dark);
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .team-member p {
+    font-size: 16px;
+    color: var(--dark-text);
+    line-height: 1.6;
+  }
+  
+  /* About and Contact Sections */
+  #about, #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-bg);
+    padding: 30px;
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-medium);
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  #about h2, #contact h2 {
+    font-size: 28px;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  #about p {
+    font-size: 18px;
+    color: var(--dark-text);
+    line-height: 1.6;
+  }
+  
+  .contact-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-soft);
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .contact-container p {
+    font-size: 18px;
+    color: var(--dark-text);
+    margin: 8px 0;
+  }
+  
+  .contact-container strong {
+    color: var(--primary-dark);
+    font-weight: bold;
+  }
+  
+  /* Social Links */
+  .contact-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .contact-container ul li {
+    margin: 0 10px;
+  }
+  
+  .contact-container ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: var(--transition-standard);
+  }
+  
+  .contact-container ul li a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Add subtle animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .section-block, .team-member, .product {
+    animation: fadeIn 0.5s ease forwards;
+  }
