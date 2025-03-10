@@ -64,5 +64,3 @@ Dr. Vikesh Kumar received his Ph.D. from National Sugar Institute, Kanpur and D.
 © 2025 DR.VS Beverages. All Rights Reserved.
 
 ---
-
-*This README is for the DR.VS Beverages website project. The information contained herein represents our brand values and product offerings.*
