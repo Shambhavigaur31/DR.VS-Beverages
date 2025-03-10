@@ -14,7 +14,7 @@ DR.VS Beverages is committed to providing refreshing and healthy drink options u
 Our current product lineup includes:
 
 ### Zeera Drink
-![Zeera Drink](zeera.jpg)
+<img src="zeera.jpg" alt="Zeera Drink" width="200">
 A flavorful cumin-based drink that aids digestion and provides a natural energy boost.
 
 ### Pudina Drink
